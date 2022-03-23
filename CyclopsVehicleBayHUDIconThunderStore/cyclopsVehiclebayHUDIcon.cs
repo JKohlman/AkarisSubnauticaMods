@@ -33,17 +33,12 @@ namespace cyclopsVehiclebayHUDIcon
             {
                 return ImageUtils.LoadSpriteFromFile(Path.Combine(AssetsFolder, "SeamothSprite.png"));
             }
-            else
-            {
-                return null;
-            }
-
+            return null;
         }
 
         public override string StatusText()
         {
-            string statusText = "Vehicle Docked.";
-            return statusText;
+            return "Vehicle Docked.";
         }
 
         public override Color StatusTextColor()
